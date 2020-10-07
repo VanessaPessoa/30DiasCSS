@@ -1,0 +1,258 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.html, body, p, a, li, h1, h2, h3, h4, span, button{
+    font-family: 'Rubik', sans-serif;
+}
+
+.container{ padding: 0 15rem; }
+@media(max-width: 1210px){ .container{ padding: 0 10rem; } }
+@media(max-width: 991px){ .container{ padding: 0 7rem; } }
+@media(max-width: 860px){ .container{ padding: 0 5rem; } }
+@media(max-width: 490px){ .container{ padding: 0 3rem; } }
+@media(max-width: 360px){ .container{ padding: 0 1rem; } }
+
+nav{ 
+    margin-top: 4vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul.menu{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.menu li { margin-left: 2rem;}
+.menu li a{
+    color: #4F5665;
+    font-weight: 400;
+    font-size:  16px;
+    text-decoration: none;
+   
+}
+
+.btn{
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.signIn{
+    color: #0B132A;
+    margin-right: 2rem;
+}
+
+.signUp{
+    color: rgba( 245,56,85,1 );
+    padding: .5rem 1rem;
+    border: 1px solid;
+    border-radius: 50px;
+}
+
+.home{
+    padding: 5rem 0;
+}
+
+.bloco-laslesVPN{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-column-gap: 4%;
+    margin-top: 5vh;
+}
+
+.ilustracao{
+    max-width: 100%;
+    animation-duration: 5s;
+    animation-name: subir;
+    animation-iteration-count: infinite;
+    
+}
+
+.laslesVPN__texto h2{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 70px;
+    color: #0B132A;
+}
+
+.laslesVPN__texto h2 span{
+    font-weight: bold;
+}
+
+.laslesVPN__texto p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 20px;
+    color: #4F5665;
+}
+
+.laslesVPN__texto button{
+    margin-top: 50px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #F53838;
+    border-color: transparent;
+    border-radius: 8px;
+    padding: .5rem 2.5rem;
+    box-shadow: 2px 10px 20px 0 #f538385e;
+}
+
+@keyframes subir {
+    from{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(5px);
+    }
+    
+    100%{
+        transform: translateY(0);
+    }
+
+}
+
+.planos{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    margin-top: 15vh;
+    background-color: #ffffff;
+    box-shadow: 2px 100px 40px 150px #0d102511;
+    padding: 2rem  0 2rem  ;
+    /* border-radius: 8px; */
+
+}
+
+.planos:hover{
+    transform: scale(1.2);
+}
+
+.planos__item{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.planos__item:nth-child(2){
+    border-right: 2px solid #EEEFF2;
+    border-left: 2px solid #EEEFF2;
+
+    height: auto;
+}
+
+.planos__item div{
+    margin-left: 5%;
+}
+
+.laslesVPN__texto ul{
+    list-style-image: url(../img/list.png);
+    margin-left: 5%;
+    font-size: 14px;
+    color: #4F5665;
+}
+
+.bloco2{
+    background-color: #F6F6F6;
+    padding: 5rem;
+}
+
+.pacote h3, .mapa h3{
+    font-size: 35px;
+    text-align: center;
+    color:#0B132A ;
+}
+
+.pacote p, .mapa p{
+    text-align: center;
+    font-size: 16px;
+    color: #4F5665;
+    margin: 3% 0;
+}
+
+.pacotes{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 3.33%;
+    margin-top: 5%;
+}
+
+.pacotes__item{
+    padding: 2rem;
+    border: 1px solid #DDDDDD;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    height: 500px;
+}
+
+.pacotes__item:hover{
+    transform: scale(1.1);
+}
+
+.pacotes__item p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #0B132A;
+}
+
+.pacotes__item ul{
+    list-style-image: url(../img/lista.png);
+    margin-left: 5%;
+    font-size: 14px;
+    color: #4F5665;
+}
+
+.pacotes__item h4{
+    margin: auto 0 0;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #0B132A;
+}
+
+.pacotes__item button{
+    margin-top: 5%;
+    font-size: 16px;
+    color:  #F53838;
+    border: 1px solid;
+    border-radius: 50px;
+    padding: .5rem 2rem;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.pacotes__item:nth-last-child(1){
+    border: 1px solid #F53838;
+}
+
+.pacotes__item:nth-last-child(1) button{
+    background-color: #F53838;
+    color: #ffffff;
+}
+
+.mapa{
+    margin-top: 10vh;
+}
+
+.mapa img, .mapa source{
+    margin-top: 5rem;
+    max-width: 100%;
+    margin: 5rem auto 0;
+}
