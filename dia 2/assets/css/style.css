@@ -1,0 +1,251 @@
+ @import "https://fonts.googleapis.com/css?family=Open+Sans";
+
+.gallery__prev,
+.gallery__next {
+  position: absolute;
+  top: 50%;
+  z-index: 4;
+  width: 50%;
+  height: 100%;
+  transform: translateX(-50%) translateY(-50%) scale(.8);
+  cursor: pointer;
+}
+
+.gallery__prev {
+  left: 0;
+}
+
+.gallery__next {
+  left: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #363535;
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans';
+}
+
+.gallery {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    float: left;
+    /* display: flex; */
+  }
+
+  .gallery__stream {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery__item {
+    position: relative;
+    width: 28.33%;
+    background-color: #ff45555d;
+    margin: 0 2.5%;
+    border-radius: 25px;
+    height: 100%;
+    transition: 1s all ease;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 5px;
+    background: #000;
+    padding: 5rem;
+}
+
+.gallery__item .front-side{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg1{
+    background-image:url('https://cdn.ome.lt/cz7gvc_tc7o2PV9N59YH8GJrB4M=/770x0/smart/uploads/conteudo/fotos/raze.jpg');
+}
+.bg2{
+    background-image:url('https://cdn.ome.lt/UNu3em75j2efFGdqZHTRg4hG1XQ=/770x0/smart/uploads/conteudo/fotos/breach.jpg');
+}
+.bg3{
+    background-image:url('https://cdn.ome.lt/WnLzeb5TZ9oAoIKFXcdQlY-B5g8=/770x0/smart/uploads/conteudo/fotos/phoenix_KMr7bry.jpg');
+}
+.bg4{
+    background-image:url('https://cdn.ome.lt/X5hIwb9CpADoVZISQBwadUJ6lEg=/770x0/smart/uploads/conteudo/fotos/viper_yQFUraH.jpg');
+}
+.bg5{
+    background-image:url('https://cdn.ome.lt/Q-NQq1bkwbjE7sqSXoY_AX20KBA=/770x0/smart/uploads/conteudo/fotos/sova.jpg');
+}
+.bg6{
+    background-image:url('https://cdn.ome.lt/K1weNVe0Nr_2BC6K6RC8pZVgMt0=/770x0/smart/uploads/conteudo/fotos/omen.jpg');
+}
+.bg7{
+    background-image:url('https://cdn.ome.lt/YlsI5mYVK2pXgNZz8F7cGKBIm3A=/770x0/smart/uploads/conteudo/fotos/sage.jpg');
+}
+.bg8{
+    background-image:url('https://cdn.ome.lt/uYa97hO1YfbHeW0cfKWjePhV_u8=/770x0/smart/uploads/conteudo/fotos/brimstone.jpg');
+}
+.bg9{
+    background-image:url('https://cdn.ome.lt/zG1iijTEpMashMpjFlitG0W1I8c=/770x0/smart/uploads/conteudo/fotos/cypher.jpg');
+}
+.bg10{
+    background-image:url('https://cdn.ome.lt/96LWB7wOCzRwsmXxTsIe07f5STo=/770x0/smart/uploads/conteudo/fotos/jett_QRY1MtZ.jpg');
+}
+.bg11{
+    background-image:url('https://cdn.ome.lt/VbSRet94LCrTLhIaswhfURKOMxk=/770x0/smart/uploads/conteudo/fotos/valorant-reyna_JGRVrmC.jpg');
+}
+.bg12{
+    background-image:url('https://cdn.ome.lt/lY0bFQyVEaZW7MejWpLWs3uEZzc=/770x0/smart/uploads/conteudo/fotos/killjoy.jpg');
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.text h3{
+    color: #6f2b40;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+
+.text p{
+    text-align: center;
+    width: 80%;
+    margin: 3% auto;
+}
+
+.text p span{
+    font-weight: bold;
+    color: #6f2b40;
+}
+
+
+.gallery:before,
+.gallery:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 10%;
+  height: 100%;
+  z-index: 3;
+}
+
+.flip .front-side,
+.flip .back-side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+ 
+    -webkit-transition: transform 0.4s ease-out, opacity 0.3s ease-out;
+    -moz-transition: transform 0.4s ease-out, opacity 0.3s ease-out;
+    transition: transform 0.4s ease-out, opacity 0.3s ease-out;
+}
+.text{
+    opacity: 0;
+    -webkit-transition: transform 0.4s ease-out, opacity 0.3s ease-out;
+    -moz-transition: transform 0.4s ease-out, opacity 0.3s ease-out;
+    transition: transform 0.4s ease-out, opacity 0.3s ease-out;
+}
+
+.gallery__item{
+    background-color: #fff;
+}
+
+.flip:hover .front-side {
+    background-color: #fff;
+    opacity: 0;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.flip:hover .back-side {
+    background: #000;
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.flip:hover .text{
+    opacity: 1;
+    -webkit-transition: transform 0.4s ease-out, opacity 0.3s ease-out;
+    -moz-transition: transform 0.4s ease-out, opacity 0.3s ease-out;
+    transition: transform 0.4s ease-out, opacity 0.3s ease-out;
+}
+.flip.front-side,
+.flip.back-side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    -webkit-backface-visibility:  hidden;
+    -moz-backface-visibility:  hidden;
+    backface-visibility:  hidden;
+
+    -webkit-transition: transform 0.4s ease-out, opacity 0.3s ease-out;
+    -moz-transition: transform 0.4s ease-out, opacity 0.3s ease-out;
+    transition: transform 0.4s ease-out, opacity 0.3s ease-out;
+}
+.gallery__item{
+    opacity: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.flip .back-side {
+    opacity: 0;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+.flip .back-side > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+@-webkit-keyframes hide {
+    100% {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+  @-moz-keyframes hide {
+    100% {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+  @keyframes hide {
+    100% {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+  
