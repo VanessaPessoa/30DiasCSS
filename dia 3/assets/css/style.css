@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: #ededed url(../img/undraw_Mobile_marketing_re_p77p.svg) no-repeat;
+    background-position-x: 20%;
+    background-position-y: center;
+    background-size: 35%;
+    /* background-size: 90% 80%; */
+}
+
+.position{
+    position: relative;
+    float: left;
+    left: 65%;
+    margin-top: 5%;
+}
+
+.branch {
+    position: relative;
+    margin-left: 170px;
+}
+.branch:before {
+    content: "";
+    width: 50px;
+    border-top: 2px solid #3F3D56;
+    position: absolute;
+    left: -100px;
+    top: 50%;
+    margin-top: 1px;
+}
+
+.entry {
+    position: relative;
+    height: 200px;
+}
+.entry:before {
+    content: "";
+    height: 100%;
+    border-left: 2px solid #3F3D56;
+    position: absolute;
+    left: -50px;
+}
+.entry:after {
+    content: "";
+    width: 50px;
+    border-top: 2px solid #3F3D56;
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    margin-top: 1px;
+}
+
+.entry:first-child:before {
+    width: 10px;
+    height: 50%;
+    top: 50%;
+    margin-top: 2px;
+    border-radius: 10px 0 0 0;
+  }
+.entry:first-child:after {
+    height: 10px;
+    border-radius: 10px 0 0 0;
+}
+.entry:last-child:before {
+    width: 10px;
+    height: 50%;
+    border-radius: 0 0 0 10px;
+}
+.entry:last-child:after {
+    height: 10px;
+    border-top: none;
+    border-bottom: 2px solid #3F3D56;
+    border-radius: 0 0 0 10px;
+    margin-top: -9px;
+}
+.entry.sole:before {
+    display: none;
+}
+.entry.sole:after {
+    width: 50px;
+    height: 0;
+    margin-top: 1px;
+    border-radius: 0;
+}
+.label {
+    display: block;
+    width: 70px;
+    height: 70px;
+    line-height: 20px;
+    text-align: center;
+    border: 2px solid #eee9dc;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 40%;
+    margin-top: -15px;
+    background-color: #3F3D56;
+}
+  
+.label:hover{
+    transform: scale(1.1);
+    opacity: 0.3;
+}
+
+.redes{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 7.5px;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+    0%{
+      transform: scale(.8);
+    }
+  
+    100% {
+      transform: scale(1.2);
+    }
+  }
